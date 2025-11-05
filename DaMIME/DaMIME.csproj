@@ -13,7 +13,7 @@
 
   <PropertyGroup>
     <PackageId>DaMIME</PackageId>
-    <Summary>A MIME type detection library, based on file signatures and extensions.</Summary>
+    <Description>A MIME type detection library, based on file signatures and extensions.</Description>
     <Title>DaMIME</Title>
     <AssemblyFileVersion>$(PackageVersion)</AssemblyFileVersion>
     <PackageTags>mime;file;detection;marcel;tiki</PackageTags>
