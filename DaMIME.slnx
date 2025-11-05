@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DaMIME.Tests/DaMIME.Tests.csproj" />
+  <Project Path="DaMIME/DaMIME.csproj" />
+</Solution>

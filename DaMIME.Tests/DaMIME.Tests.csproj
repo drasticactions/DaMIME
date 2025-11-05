@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DaMIME.Tests</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../DaMIME/DaMIME.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../DaMIME/DaMIME.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+</Project>

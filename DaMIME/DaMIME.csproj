@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion Condition="'$(TargetFramework)' == 'netstandard2.0'">latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DaMIME</RootNamespace>
+    <IsAotCompatible Condition="'$(TargetFramework)' != 'netstandard2.0'">true</IsAotCompatible>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>DaMIME</PackageId>
+    <Summary>A MIME type detection library, based on file signatures and extensions.</Summary>
+    <Title>DaMIME</Title>
+    <AssemblyFileVersion>$(PackageVersion)</AssemblyFileVersion>
+    <PackageTags>mime;file;detection;marcel;tiki</PackageTags>
+    <Authors>drasticactions</Authors>
+    <NeutralLanguage>en</NeutralLanguage>
+    <GitThisAssemblyMetadata>True</GitThisAssemblyMetadata>
+    <RepositoryUrl>$(GitRepositoryUrl)</RepositoryUrl>
+    <RepositoryCommit>$(GitCommit)</RepositoryCommit>
+    <RepositoryBranch>$(GitBranch)</RepositoryBranch>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <IsPackable>true</IsPackable>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DaMIME.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GitInfo" PrivateAssets="all" />
+    <PackageReference Include="MemoryAnalyzers" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="System.Memory" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" ('$(IsPackable)' == 'true') or ('$(PackAsTool)' == 'true') ">
+    <None Include="$(MSBuildThisFileDirectory)..\..\README.md" Pack="true" PackagePath=""
+      Visible="false" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\favicon.png" Pack="true" PackagePath=""
+      Visible="false" />
+  </ItemGroup>
+
+</Project>
