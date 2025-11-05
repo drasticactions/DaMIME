@@ -4,8 +4,6 @@
     <TargetFrameworks>netstandard2.0;net8.0;net9.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
-    <PackageIcon>favicon.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Nullable>enable</Nullable>
     <RootNamespace>DaMIME</RootNamespace>
     <IsAotCompatible Condition="'$(TargetFramework)' != 'netstandard2.0'">true</IsAotCompatible>
@@ -32,6 +30,13 @@
     <IsPackable>true</IsPackable>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>DaMIME.snk</AssemblyOriginatorKeyFile>
+    <Company>Drastic Actions</Company>
+    <Copyright>Copyright (C) Drastic Actions</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackageIcon>favicon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
