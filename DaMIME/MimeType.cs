@@ -65,6 +65,9 @@ public static class MimeType
         if (string.IsNullOrWhiteSpace(contentType))
             return null;
 
+        if (contentType is null)
+            return null;
+
         // Split on semicolon, comma, or whitespace and take the first part
         var parts = contentType.ToLowerInvariant().Split(new[] { ';', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
         if (parts.Length == 0)

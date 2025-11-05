@@ -7,6 +7,8 @@
     <Nullable>enable</Nullable>
     <RootNamespace>DaMIME</RootNamespace>
     <IsAotCompatible Condition="'$(TargetFramework)' != 'netstandard2.0'">true</IsAotCompatible>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors>nullable</WarningsAsErrors>
   </PropertyGroup>
 
   <PropertyGroup>

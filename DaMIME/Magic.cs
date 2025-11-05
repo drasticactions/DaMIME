@@ -23,7 +23,7 @@ public static class Magic
             return null;
 
         // Normalize: remove leading dot and convert to lowercase
-        var normalized = extension.TrimStart('.');
+        var normalized = extension?.TrimStart('.') ?? string.Empty;
 
         return Tables.Extensions.TryGetValue(normalized, out var mimeType) ? mimeType : null;
     }
@@ -115,6 +115,9 @@ public static class Magic
         // A type is considered a child of itself
         if (string.Equals(child, parent, StringComparison.OrdinalIgnoreCase))
             return true;
+
+        if (child == null)
+            return false;
 
         // Check if child has parents in the hierarchy
         if (!Tables.TypeParents.TryGetValue(child, out var parents))
