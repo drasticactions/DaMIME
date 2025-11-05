@@ -2,7 +2,7 @@
 
 DaMIME is a MIME type and content detector, based on [Marcel](https://github.com/rails/marcel) and [Apache Tika](https://tika.apache.org). I was writing small byte-based detection for file types for my AtProtocol/Bluesky library [FishyFlip](https://github.com/drasticactions/fishyflip) and figured it could be nice to have something be more robust.
 
-** NOTE: ** I offer no support for this library. PRs and issues are welcome but don't expect fixes or regular releases. If you find that you depend on this, you should hard fork it outright.
+**NOTE:** I offer no support for this library. PRs and issues are welcome but don't expect fixes or regular releases. If you find that you depend on this, you should hard fork it outright.
 
 ## Build
 
