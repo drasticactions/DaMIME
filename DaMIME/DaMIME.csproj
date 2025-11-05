@@ -37,6 +37,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <PackageIcon>favicon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/drasticactions/DaMIME</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
